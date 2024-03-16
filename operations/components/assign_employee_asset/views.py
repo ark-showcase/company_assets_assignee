@@ -35,12 +35,6 @@ class ReturnCompanyEmployeeAsset(APIView):
         last_assigned_record = CompanyEmployeeAsset.objects.filter(company_unique_identifier=company_unique_identifier, company_asset_id=company_asset_id).\
             order_by('-id').first()
 
-        print('========================')
-        print(company_asset_id)
-        print(company_unique_identifier)
-        print(last_assigned_record)
-        print('========================')
-
         if last_assigned_record:
             last_assigned_record.returned_date = datetime.date.today()
             last_assigned_record.status = 'returned'
