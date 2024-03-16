@@ -96,3 +96,11 @@ http://127.0.0.1:8000/operation/module/assign_employee_asset/return/{company_ass
 eg: http://127.0.0.1:8000/operation/module/assign_employee_asset/return/AMIPROLIM3-3/
 
 type: get
+
+
+
+#  For view assets
+
+http://127.0.0.1:8000/operation/module/view_asset/
+
+type: get
